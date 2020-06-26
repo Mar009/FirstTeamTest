@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NYT</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href = "./style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
 
@@ -12,15 +13,27 @@
 
 <body>
     <div class="container">
-        <h1>Hewwo</h1>
         <!-- Name title -->
-        <div class="jumbotron row">
-            <h1 class="display-4">NYT</h1>
+        <div class="jumbotron row justify-content-center">
+            <h1 class="display-4 ">📰New York Times</h1>
          </div>
-    <!-- search bar -->
-
-
-    <!-- Space for articles -->
+         <div class = "row justify-content-center section-label">📝 Search Parameters</div>
+         <div class = "row">
+            <form class = "search-form">
+                <label class ="search-parameter">Search Term:</label>
+                <input id = "search-term" class = "input d-block"></input>
+                <label class ="search-parameter">Number of Records to Retrieve:</label>
+                <input id = "num-records" class = "input d-block"></input>
+                <label class ="search-parameter">Start Year (Optional):</label>
+                <input id = "start-yr" class = "input d-block"></input>
+                <label class ="search-parameter">End Year (Optional):</label>
+                <input id = "end-yr" class = "input d-block"></input>
+                <button id = "search-btn" class = "btn">🔍Search</button>
+                <button id = "clear-btn" class = "btn">🗑️Clear</button>
+            </form>
+        </div>
+        <div class = "row justify-content-center section-label">📄 Top Articles</div>
+        <div class = "row data-output"></div>
 
 
 
