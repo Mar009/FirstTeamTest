@@ -18,15 +18,29 @@
             <h1 class="display-4">NYT</h1>
          </div>
     <!-- search bar -->
-
+    <div class = "row justify-content-center section-label">Search Parameters</div>
+    <div class = "row">
+       <form class = "search-form">
+           <label class ="search-parameter">Search Term</label>
+           <input id = "search-term" class = "input d-block"></input>
+           <label class ="search-parameter">Number of Records to Retrieve</label>
+           <input id = "num-records" class = "input d-block"></input>
+           <label class ="search-parameter">Start Year (Optional):</label>
+           <input id = "start-yr" class = "input d-block"></input>
+           <label class ="search-parameter">End Year (Optional):</label>
+           <input id = "end-yr" class = "input d-block"></input>
+           <button id = "search-btn" class = "btn">:mag:Search</button>
+           <button id = "clear-btn" class = "btn">:wastebasket:Clear</button>
+       </form>
+   </div>
+   <div class = "row justify-content-center section-label">Top Articles</div>
 
     <!-- Space for articles -->
 
 
 
-
     </div>
-    
+
     <script src=“https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js”></script>
     <script src=“https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js”></script>
     <script src=“https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js”></script>
