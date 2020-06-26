@@ -14,26 +14,47 @@
 <body>
     <div class="container">
         <!-- Name title -->
-        <div class="jumbotron row justify-content-center">
+        <div class="jumbotron row justify-content-center bg-info">
             <h1 class="display-4 ">📰New York Times</h1>
          </div>
-         <div class = "row justify-content-center section-label">📝 Search Parameters</div>
          <div class = "row">
-            <form class = "search-form">
-                <label class ="search-parameter">Search Term:</label>
-                <input id = "search-term" class = "input d-block"></input>
-                <label class ="search-parameter">Number of Records to Retrieve:</label>
-                <input id = "num-records" class = "input d-block"></input>
-                <label class ="search-parameter">Start Year (Optional):</label>
-                <input id = "start-yr" class = "input d-block"></input>
-                <label class ="search-parameter">End Year (Optional):</label>
-                <input id = "end-yr" class = "input d-block"></input>
-                <button id = "search-btn" class = "btn">🔍Search</button>
-                <button id = "clear-btn" class = "btn">🗑️Clear</button>
-            </form>
+
+            <div class="card mb-3">
+                <div class="card-header">
+                    📝 Search Parameters
+                </div>
+                <div class="card-body">
+                    <form class = "search-form">
+                        <label class ="search-parameter">Search Term:</label>
+                        <input id = "search-term" class = "input d-block"></input>
+                        <label class ="search-parameter">Number of Records to Retrieve:</label>
+                        <input id = "num-records" class = "input d-block"></input>
+                        <label class ="search-parameter">Start Year (Optional):</label>
+                        <input id = "start-yr" class = "input d-block"></input>
+                        <label class ="search-parameter">End Year (Optional):</label>
+                        <input id = "end-yr" class = "input d-block"></input>
+                        <button id = "search-btn" class = "btn">🔍Search</button>
+                        <button id = "clear-btn" class = "btn">🗑️Clear</button>
+                    </form>
+                
+                </div>
+            </div>
         </div>
-        <div class = "row justify-content-center section-label">📄 Top Articles</div>
-        <div class = "row data-output"></div>
+        <div class = "row">
+            <div class="card">
+                <div class="card-header">
+                    📄 Top Articles
+                </div>
+                <div class="card-body">
+                <div class = "row data-output"></div>
+                </div>
+            </div>
+    </div>
+</div>
+
+
+        
+        
 
 
     </div>

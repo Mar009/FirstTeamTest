@@ -1,5 +1,13 @@
+.jumbotron{
+    color: white;
+}
+.card{
+    width: 100%;
+}
 .section-label{
     background-color: lightgray;
+    border-style: solid;
+    border-color: ;
 }
 .search-form{
     width: 100%;
@@ -7,3 +15,4 @@
 .input{
     width: 100%;
 }
+
